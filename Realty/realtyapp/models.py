@@ -13,7 +13,7 @@ class Apartment(models.Model):
     url_object = models.URLField()
     metro_name = models.CharField(max_length=32, blank=True)
     metro_distance = models.CharField(max_length=50, blank=True)
-    metro_distance_number = models.IntegerField(blank=True)
+    metro_distance_number = models.CharField(max_length=32, blank=True)
     total_square = models.CharField(max_length=32, blank=True)
     living_square = models.CharField(max_length=32, blank=True)
     floor_number = models.CharField(max_length=32, blank=True)
